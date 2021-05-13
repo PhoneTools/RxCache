@@ -35,17 +35,20 @@
 ```groovy
 allprojects {
     repositories {     
-        maven{url 'https://dl.bintray.com/zchu/maven/'} 
+        //maven{url 'https://dl.bintray.com/zchu/maven/'}
+        maven { url "https://jitpack.io" }
     }
 }
 ```
 **RxJava 2.0**
 ```groovy
-implementation 'com.zchu:rxcache:2.3.5'
+//implementation 'com.zchu:rxcache:2.3.5'
+implementation 'com.github.PhoneTools.RxCache:rxcache:2.3.5'
 ```
 **可添加 Kotlin 扩展,解决泛型擦除问题**
 ```groovy
-implementation 'com.zchu:rxcache-kotlin:2.3.5'
+//implementation 'com.zchu:rxcache-kotlin:2.3.5'
+implementation 'com.github.PhoneTools.RxCache:rxcache-kotlin:2.3.5'
 ```
 
 ### 首先创建一个 RxCache 实例
